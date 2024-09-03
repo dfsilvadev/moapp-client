@@ -1,2 +1,4 @@
-echo "Check for linting errors..."
-npx --no-install lint-staged
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+yarn lint-staged
